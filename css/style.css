@@ -1,0 +1,471 @@
+/* ここから下に記載していく */
+
+/*-------------------
+全体に共通のCSS
+*-------------------*/
+
+@charset "utf-8";
+html{
+    font-size:62.5%; /* 16px*62.5%=10px */
+}
+
+body{
+    color: #333333;
+    font-family:"Open sans","ヒラギノ角ゴ ProN W3","メイリオ","sans-serif";
+    font-size: 1.6rem;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.back-gray{
+    background-color: #707070;
+}
+
+
+.site-title{font-size:2.4rem; font-weight:bold;}
+
+
+:focus {
+    outline: none;
+    border:none;
+} 
+
+form{
+    outline: none;
+    border:none;
+}
+
+thead, tbody, tfoot { vertical-align: middle } /* add this rule*/
+td, th, tr { vertical-align: inherit } /* add this rule */
+
+/*----------------
+headerの部分のCSS
+*-----------------*/
+
+
+.header{
+    width: 1140px;
+    margin: auto;
+} 
+
+.nav_font{
+    font-size: 2.1rem;
+}
+
+.nav_list{
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.nav_item{
+    font-size: 21px;
+    max-width:100px;
+    padding: 50px 25px 50px;
+}
+
+.nav_item>a{
+    color: black;
+    text-decoration: none;
+}
+
+.header_flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10px 0 10px;
+    flex-wrap: wrap; 
+}
+
+.main-visual{
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.main-visual-p{
+    position: absolute;/*絶対配置*/
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    margin:0;
+    padding:0;
+    color: white;/*文字は白に*/
+} 
+
+.main-visual-img {
+    width: 1140px;
+}
+
+.title{
+    font-size: 3.5rem;
+    color:white;
+    padding: 0 0 30px 0;
+    font-weight: bold;
+}
+
+.subtitle{
+    font-size: 3rem;
+    color:white;
+    width: 1140px;
+    font-weight:none;
+}
+
+
+/* .header_logo{
+    margin: 0 100px 0 0;
+} */
+
+/*----------------
+aboutの部分のCSS
+*----------------- */
+
+.about_img{
+    display:flex;
+    max-width:1140px;
+}
+
+.img_cld{
+    max-width: 25%;
+}
+
+.about-wrapper{
+    width: 1140px;
+    margin: auto;
+}
+
+.about_margin{
+    color:#ffd61a;
+    margin: 0 0 30px;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.about_wrapper_margin{
+    margin: 0 0 60px;
+}
+
+.about_font1{
+    line-height: 2;
+    font-size: 1.6rem;
+    margin: 0 0 40px;
+}
+
+/*----------------
+courseの部分のCSS
+*----------------- */
+
+.course-wrapper{
+    width: 1140px;
+    margin: auto;
+}
+
+.course_margin{
+    color:#ffd61a;
+    margin: 0 0 30px;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.course_wrapper_margin{
+    margin: 0 0 60px;
+}
+
+.course_font1{
+    line-height: 2;
+    font-size: 1.6rem;
+    margin: 0 0 60px;
+    text-align: center;
+    vertical-align: center;
+}
+
+.course_flex{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #fafafa;
+}
+
+.course_content{
+    width:570px
+}
+
+.course_font2{
+    line-height: 2;
+    font-size: 1.6rem;
+    margin: 40px 0 60px 50px;
+    text-align: center;
+    vertical-align: center;
+    transform-box: border-box;
+    width: 480px;
+}
+
+.course_font3{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 120px 0 0 0;
+}
+
+/*----------------
+newsの部分のCSS
+*----------------- */
+
+.news-wrapper{
+    width: 1140px;
+    margin: auto;
+}
+
+.news_margin{
+    color:#ffd61a;
+    margin: 0 0 30px;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.news_wrapper_margin{
+    margin: 0 0 60px;
+}
+
+.news_font1{
+    width: 300px;
+    line-height: 2;
+    font-size: 1.6rem;
+    padding: 0 15px 5px;
+    margin: 0 0 5px
+}
+
+.news-date{
+    width: 300px;
+    margin: 0 0 24px;
+}
+
+.news_img{
+    width:300px;
+    padding: 0 15px 30px;
+}
+
+.news_list{
+    display: flex;
+    margin: auto;
+    width: 990px;
+}
+
+.news_item{
+    width: 33.3333%;
+}
+
+.news_item:hover {
+    color: orange;
+    box-shadow: 5px 0 3px #fafafa;
+  }
+
+/*----------------
+Moreの部分のCSS
+*----------------- */
+
+.button {
+    margin: 25px 0 60px;
+    font-size: 1.8rem;
+    display: inline-block;
+    width: 300px;
+    height: 60px;
+    background-color:#ffd61a;
+    color: #fafafa;
+    text-align: center;
+    text-decoration: none;
+    line-height: 60px;
+    outline: none;
+  }
+
+/*----------------
+Accessの部分のCSS
+*----------------- */
+
+.map{
+    margin: 0 0 60px 0;
+}
+
+.access-wrapper{
+    width: 1140px;
+    margin: auto;
+}
+
+.access_margin{
+    color: black;
+    margin:0 0 30px;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.back-pale-gray{
+    background-color: #fafafa;
+    padding:60px 0 60px;
+    margin: 0 0 60px
+}
+
+.address{
+   width: 550px;
+   display:flex; 
+   flex-wrap: wrap;
+   margin:auto;
+}
+
+.address_ttl{
+    width:150px;
+    height:50px;
+    text-align: left;
+    margin: 0 0 30px;
+}
+
+.address_body{
+    width:400px;
+    height:50px;
+    text-align: left;
+    margin: 0 0 30px;
+}
+
+
+/*---------------------
+Contactの部分Bパターン
+*----------------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+.contact {
+    width: 640px;
+    margin: 0 auto;
+    padding: 60px 0 140px;
+}
+
+.contact-ttl {
+    color: black;
+    margin:0 0 30px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contact-table {
+    width: 100%;
+    margin-bottom: 30px;
+    border: 1px solid #bfbfbf;
+    /* border: 1px solid #bfbfbf; */
+    /* border: 0px  #fff; */
+    border-right: 0px #fff;
+    border-left: 0px #fff;
+    border-top: 3px solid #bfbfbf;
+    border-bottom: 1px solid #bfbfbf;
+}
+
+.contact-item,
+.contact-body {
+    padding: 20px;
+    /* border: 1px solid #bfbfbf;
+    border: 0px  #fff;
+    border-r: 0px #fff; */
+    border-top: 1px solid #bfbfbf;
+    vertical-align: center;
+}
+
+.text-just-center{
+    display: table-cell;
+    vertical-align: center;
+}
+
+.contact-item {
+    position:relative
+    text-align: left;
+    text-justify: center;
+    width: 240px;
+    background-color: #white;
+}
+
+.contact-body {
+    width: 400px;
+    border-left: 1px solid #bfbfbf;
+}
+
+.form-text {
+    width: 100%;
+    padding: 8px 0 8px 8px;
+    /* border-radius: 5px; */
+    border: 1px solid #bfbfbf;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    max-width: 328px;
+}
+
+.form-select {
+    width: 328px;
+    height: 40px;
+    padding: 5px;
+    border: 1px solid #bfbfbf;
+    /* border-radius: 5px; */
+}
+
+.contact-skill {
+    display: block;
+    width: 390px
+}
+
+.contact-skill + .contact-skill {
+    margin-top: 10px;
+}
+
+.contact-skill-txt {
+    display: inline-block;
+    margin-left: 5px;
+    font-size:14px;
+}
+
+.form-textarea {
+    width: 100%;
+    padding: 10px;
+    height: 200px;
+    /* border-radius: 5px; */
+    border: 1px solid #ccc;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.contact-submit {
+    width: 250px;
+    background-color: #ffd61a;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+    font-size: 16px;
+    padding: 15px;
+    /* border-radius: 100vh; */
+    border: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+}
+
+.form_detail{
+    padding: 20px 20px 0px 20px;
+    top:50%
+    vertical-align: inherit;
+}
+/*---------------
+footer
+*---------------*/
+.footer-margin{
+    width:1140px;
+    padding:30px 0 30px 0;
+    margin: auto;
+}
